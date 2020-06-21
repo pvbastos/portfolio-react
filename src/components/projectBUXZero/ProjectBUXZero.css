@@ -5,7 +5,6 @@
   top: 100px;
   left: 0;
   z-index: 1;
-  background-color: #cccccc;
 }
 
 .text-container{
@@ -22,6 +21,11 @@
 }
 
 .full-image{
-  width: 100%;
-  height: 540px;
+  width: auto;
+  height: auto;
+  border-radius: 40px;
+}
+
+.full-image video{
+  border-radius: 40px;
 }
