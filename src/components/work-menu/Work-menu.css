@@ -1,0 +1,134 @@
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  height: calc(100vh - 140px);
+  position: relative;
+  top: 100px;
+  left: 0;
+  z-index: 1;
+  display: block;
+  animation-name: animate-wrapper;
+  animation-duration: 0.6s;
+  transition-timing-function: ease-in;
+}
+
+.wrapper-off{
+  display: none;
+}
+
+.container{
+  margin: 40px;
+  padding: 40px;
+  background-color: #ffdd00;
+  border-radius: 40px;
+  height: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-row{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-row{
+  margin-top: 40px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-item{
+  background-color: #ffdd00;
+  border-radius: 30px;
+  width: calc(100% / 3 - 25px);
+
+}
+
+.work-link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-item:hover{
+  position: relative;
+	cursor: pointer;
+	z-index: 1000;
+  background: #ffdd00;
+  box-shadow:  13px 13px 26px #d9bc00,
+               -13px -13px 26px #fffe00;
+  transform: scale(1.06,1.06);
+  -ms-transform: scale(1.06,1.06); /* IE 9 */
+  transition: 0.1s;
+}
+
+.work-item:active{
+  position: relative;
+	cursor: pointer;
+	z-index: 1000;
+  background: #ffdd00;
+  box-shadow:  5px 5px 10px #d9bc00,
+               -5px -5px 10px #fffe00;
+  transform: scale(1,1);
+  -ms-transform: scale(1,1); /* IE 9 */
+  transition: 0.1s;
+}
+
+.work-logo{
+  height: 50%;
+}
+
+.animation-fade-in-01{
+  animation-name: fade-in;
+  animation-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+.animation-fade-in-02{
+  animation-name: fade-in;
+  animation-duration: 1.2s;
+  transition-timing-function: ease-in;
+}
+
+.animation-fade-in-03{
+  animation-name: fade-in;
+  animation-duration: 1.4s;
+  transition-timing-function: ease-in;
+}
+
+.animation-fade-in-04{
+  animation-name: fade-in;
+  animation-duration: 1.6s;
+  transition-timing-function: ease-in;
+}
+
+.animation-fade-in-05{
+  animation-name: fade-in;
+  animation-duration: 1.8s;
+  transition-timing-function: ease-in;
+}
+
+.animation-fade-in-06{
+  animation-name: fade-in;
+  animation-duration: 2s;
+  transition-timing-function: ease-in;
+}
+
+@keyframes animate-wrapper {
+  0% {top:300px;}
+  100% {top:100px;}
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  100% {opacity: 1;}
+}
