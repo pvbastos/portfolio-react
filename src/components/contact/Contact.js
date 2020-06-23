@@ -15,6 +15,8 @@ import {
 
 const contact = props => (
 
+
+
   <div className="wrapper-contact" id="contact">
     <div className="container-contact">
       <div className="contact-content">
@@ -23,17 +25,17 @@ const contact = props => (
             Want to get in touch?
           </div>
           <div className="contact-email"
-            
+
           >
-            hello@pvbastos.com
+            <a href={"mailto:hello@pvbastos.com"} target="_blank">hello@pvbastos.com</a>
             <div className="round-rectangle">
             </div>
           </div>
 
         </div>
         <div className="contact-social">
-          <img src={Linkedin} className="image-social"/>
-          <img src={Dribbble} className="image-social"/>
+          <a href={"https://www.linkedin.com/in/pvbastos/"} target="_blank"><img src={Linkedin} className="image-social"/></a>
+          <a href={"https://dribbble.com/pvbastos"} target="_blank"><img src={Dribbble} className="image-social"/></a>
         </div>
       </div>
     </div>

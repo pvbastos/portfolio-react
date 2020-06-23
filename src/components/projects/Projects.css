@@ -1,0 +1,96 @@
+.wrapper-project{
+  width: 1200px;
+  margin: 40px auto;
+  position: relative;
+  top: 100px;
+  left: 0;
+  z-index: 1;
+  animation-name: animate-wrapper-project;
+  animation-duration: 0.6s;
+  transition-timing-function: ease-in;
+}
+
+.text-container{
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-family: Mr Eaves San OT;
+  font-style: normal;
+  text-align: left;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+  color: #111111;
+}
+
+.wrapper-project a{
+  color: #111111;
+  text-decoration-color: #ffdd00;
+}
+.wrapper-project a:hover{
+  color: #111111;
+  text-decoration-color: #111111;
+
+}
+
+.subtitle{
+  margin: 0 auto;
+  padding-top: 20px;
+  font-family: Mr Eaves San OT;
+  font-style: normal;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  color: #999999;
+  font-style: italic;
+}
+
+.full-image{
+  width: auto;
+  height: auto;
+  border-radius: 40px;
+}
+
+.full-image video{
+  border-radius: 40px;
+}
+
+.full-image img{
+  width: 100%;
+}
+
+.padding-top-80{
+  padding-top: 80px;
+}
+
+.scroll-card{
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+}
+
+.gradient-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+.card img{
+  max-width: 300px;
+  border-radius: 20px;
+  border: solid 1px #f2f2f2;
+}
+
+.padding-left-20px{
+  padding-left: 20px;
+}
+
+.scroll-card::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes animate-wrapper-project {
+  0% {top:300px; opacity: 0;}
+  100% {top:100px; opacity: 1}
+}

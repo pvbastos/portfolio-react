@@ -24,7 +24,7 @@ const header = props => (
       <div className="header-logo">
       <Link
         className="menu-link"
-        to="/work"
+        to="/"
         // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
         >
           <img src={Logo} className="logo"/>
@@ -34,7 +34,7 @@ const header = props => (
         <li className="menu-item">
           <Link
             className="menu-link"
-            to="/work"
+            to="/"
             // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
             >
             work

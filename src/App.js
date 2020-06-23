@@ -5,10 +5,14 @@ import Header from './components/header/Header';
 import Work from './components/work-menu/Work-menu';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
-import ProjectBUXZero from './components/projectBUXZero/ProjectBUXZero';
+import ProjectBUXZero from './components/projects/ProjectBuxZero';
+import ProjectBUXx from './components/projects/ProjectBuxX';
+import ProjectC4C from './components/projects/ProjectC4C';
+
 
 
 import {
+
   BrowserRouter as Router,
   Switch,
   Route,
@@ -31,23 +35,28 @@ const App = () => {
 
 
         <Switch>
-          <Route exact path="/work">
-            <Work id="work"/>
+          <Route exact path="/">
+            <Work />
           </Route>
           <Route path="/about">
-            <About id="about"/>
+            <About />
 
           </Route>
           <Route path="/contact">
-            <Contact id="contact"/>
+            <Contact />
+          </Route>
+          <Route path="/projects/bux-zero">
+            <ProjectBUXZero />
+          </Route>
+          <Route path="/projects/creatives-for-climate">
+            <ProjectC4C />
+          </Route>
+          <Route path="/projects/bux-x">
+            <ProjectBUXx />
           </Route>
         </Switch>
 
-        <Switch>
-          <Route path="/projects">
-            <ProjectBUXZero />
-          </Route>
-        </Switch>
+
 
       </Router>
     </div>

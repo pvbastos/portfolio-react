@@ -45,6 +45,7 @@
   align-self: flex-end;
 }
 
+
 .image-social{
   padding: 0 5px;
 }
@@ -60,7 +61,6 @@
 }
 
 .contact-email{
-  width: fit-content;
   font-family: Mr Eaves San OT;
   font-style: normal;
   font-weight: 300;
@@ -68,6 +68,37 @@
   line-height: 33px;
   color: #111111;
   padding-top: 40px;
+}
+
+.contact-email a{
+  text-align: center;
+  color: #111111;
+  background: #ffdd00;
+  border-radius: 40px;
+  text-decoration: none;
+  padding: 10px 40px 20px 40px;
+}
+
+.contact-email a:hover{
+  border-radius: 40px;
+  background: #ffdd00;
+  box-shadow:  5px 5px 10px #d9bc00,
+               -5px -5px 10px #fffe00;
+  transform: scale(1.06,1.06);
+  -ms-transform: scale(1.06,1.06); /* IE 9 */
+  transition: 0.1s;
+  font-size: 62px;
+}
+
+.contact-email a:active{
+  border-radius: 40px;
+  background: #ffdd00;
+  box-shadow: inset -5px -5px 10px #fffe00,
+              inset 5px 5px 10px #d9bc00;
+  transform: scale(1,1);
+  -ms-transform: scale(1,1); /* IE 9 */
+  transition: 0.1s;
+  font-size: 58px;
 }
 
 .round-rectangle{

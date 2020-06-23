@@ -29,8 +29,8 @@ const workMenu = props => (
           <div className="work-item animation-fade-in-01">
             <Link
             className="work-link"
-            to="/projects#bux-zero"
-            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
+            to="/projects/bux-zero"
+            // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
             >
 
               <img src={LogoZero} className="logo"/>
@@ -42,8 +42,8 @@ const workMenu = props => (
           <div className="work-item animation-fade-in-02">
             <Link
             className="work-link"
-            to="/projects#bux-x"
-            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
+            to="/projects/bux-x"
+
             >
 
               <img src={LogoX} className="logo"/>
@@ -59,7 +59,7 @@ const workMenu = props => (
         </div>
         <div className="bottom-row">
           <div className="work-item animation-fade-in-04">
-            <Link className="work-link" to="/">
+            <Link className="work-link" to="/projects/creatives-for-climate">
               <img src={LogoC4C} className="work-logo"/>
             </Link>
           </div>

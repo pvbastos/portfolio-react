@@ -63,8 +63,8 @@
 	cursor: pointer;
 	z-index: 1000;
   background: #ffdd00;
-  box-shadow:  13px 13px 26px #d9bc00,
-               -13px -13px 26px #fffe00;
+  box-shadow:  5px 5px 10px #d9bc00,
+               -5px -5px 10px #fffe00;
   transform: scale(1.06,1.06);
   -ms-transform: scale(1.06,1.06); /* IE 9 */
   transition: 0.1s;
@@ -75,8 +75,8 @@
 	cursor: pointer;
 	z-index: 1000;
   background: #ffdd00;
-  box-shadow:  5px 5px 10px #d9bc00,
-               -5px -5px 10px #fffe00;
+  box-shadow: inset -5px -5px 10px #fffe00,
+              inset 5px 5px 10px #d9bc00;
   transform: scale(1,1);
   -ms-transform: scale(1,1); /* IE 9 */
   transition: 0.1s;
