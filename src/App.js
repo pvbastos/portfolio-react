@@ -8,6 +8,10 @@ import Contact from './components/contact/Contact';
 import ProjectBUXZero from './components/projects/ProjectBuxZero';
 import ProjectBUXx from './components/projects/ProjectBuxX';
 import ProjectC4C from './components/projects/ProjectC4C';
+import ProjectCodhab from './components/projects/ProjectCodhab';
+import ProjectRioZoo from './components/projects/ProjectRioZoo';
+import ProjectBUXCrypto from './components/projects/ProjectBuxCrypto';
+
 
 
 
@@ -53,6 +57,15 @@ const App = () => {
           </Route>
           <Route path="/projects/bux-x">
             <ProjectBUXx />
+          </Route>
+          <Route path="/projects/codhab">
+            <ProjectCodhab />
+          </Route>
+          <Route path="/projects/riozoo">
+            <ProjectRioZoo />
+          </Route>
+          <Route path="/projects/bux-crypto">
+            <ProjectBUXCrypto />
           </Route>
         </Switch>
 

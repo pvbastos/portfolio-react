@@ -52,7 +52,7 @@ const workMenu = props => (
           </div>
 
           <div className="work-item animation-fade-in-03">
-            <Link className="work-link" to="/">
+            <Link className="work-link" to="/projects/bux-crypto">
               <img src={LogoCrypto} className="work-logo"/>
             </Link>
           </div>
@@ -64,12 +64,12 @@ const workMenu = props => (
             </Link>
           </div>
           <div className="work-item animation-fade-in-05">
-            <Link className="work-link" to="/">
+            <Link className="work-link" to="/projects/riozoo">
               <img src={LogoRioZoo} className="work-logo"/>
             </Link>
           </div>
           <div className="work-item animation-fade-in-06">
-            <Link className="work-link" to="/">
+            <Link className="work-link" to="/projects/codhab">
               <img src={LogoCodHab} className="work-logo"/>
             </Link>
           </div>

@@ -10,6 +10,7 @@ import Appstore05 from '../../images/bux-zero-appstore/appstore-05.jpg';
 import Appstore06 from '../../images/bux-zero-appstore/appstore-06.jpg';
 import ReelBUXZero from '../../images/reel-bux-zero.mp4';
 import IconAnimations from '../../images/bux-zero-icons-animations.mp4';
+import BUXZeroAppstoreVideo from '../../images/bux-zero-appstore/App-preview-video-6-inches-NL.mp4';
 
 
 
@@ -30,6 +31,9 @@ const about = props => (
       <div className="gradient-overlay">
       </div>
       <div className="card">
+        <video src={BUXZeroAppstoreVideo} height="auto" controls></video>
+      </div>
+      <div className="card padding-left-20px">
         <img src={Appstore01} ></img>
       </div>
       <div className="card padding-left-20px">
@@ -47,6 +51,7 @@ const about = props => (
       <div className="card padding-left-20px">
         <img src={Appstore06} ></img>
       </div>
+
     </div>
     <div className="subtitle">
       <p>Appstore presence</p>
