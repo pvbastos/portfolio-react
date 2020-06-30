@@ -11,6 +11,8 @@ import ProjectC4C from './components/projects/ProjectC4C';
 import ProjectCodhab from './components/projects/ProjectCodhab';
 import ProjectRioZoo from './components/projects/ProjectRioZoo';
 import ProjectBUXCrypto from './components/projects/ProjectBuxCrypto';
+import Menu from './components/menu/Menu';
+import { useState } from 'react';
 
 
 
@@ -29,13 +31,16 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const App = () => {
 
+  const [open, setOpen] = useState(false);
 
 
   return (
     <div className="App">
       <Router>
 
-        <Header />
+        <div>
+          <Header open={open} setOpen={setOpen}/>
+        </div>
 
 
         <Switch>

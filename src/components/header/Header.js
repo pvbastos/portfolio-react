@@ -1,7 +1,8 @@
 import React from 'react';
 import './Header.css';
-import Logo from '../../images/paulo-bastos-logo.svg';
 import { Transition } from 'react-transition-group';
+import { ReactComponent as Hamburger } from '../../images/hamburger-icon.svg';
+
 
 import {
   BrowserRouter as Router,
@@ -15,7 +16,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 
 
-const header = props => (
+const header = ({ open, setOpen }) => (
+
 
 
   <header className="header">
@@ -27,9 +29,12 @@ const header = props => (
         to="/"
         // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
         >
-          <img src={Logo} className="logo"/>
+          <div className="header-logo">
+          </div>
         </Link>
       </div>
+      <div className="hamburger-icon" open={open} onClick={() => setOpen(!open)}><Hamburger />
+</div>
       <ul>
         <li className="menu-item">
           <Link

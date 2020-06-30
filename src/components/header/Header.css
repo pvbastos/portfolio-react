@@ -19,6 +19,12 @@
 
 .header-logo{
   height: 60px;
+  background: url('../../images/paulo-bastos-logo.svg');
+  width: 267px;
+}
+
+.header-logo:hover{
+  cursor: pointer;
 }
 
 .header-main-nav ul{
@@ -28,6 +34,10 @@
   flex-flow: row;
   flex-wrap: wrap;
   line-height: 54px;
+}
+
+.hamburger-icon{
+  display: none;
 }
 
 .menu-item{
@@ -45,4 +55,33 @@
 	font-size: 36px;
   color: #000;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-main-nav ul{
+    display: none;
+    margin: 20px;
+  }
+
+  .header-main-nav{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger-icon{
+    display: block;
+    width: 20px;
+    padding: 10px;
+  }
+  .header-logo{
+    height: 40px;
+    background: url('../../images/paulo-bastos-logo-mobile.svg');
+    width: 178px;
+  }
+  .header-logo:hover{
+    cursor: pointer;
+  }
+
 }

@@ -12,7 +12,7 @@ const about = props => (
       <img src={CodhabIMG00} width="80%"></img>
     </div>
     <div className="text-container">
-    <p className="bold-paragraph">***Awarded 2nd place in nation-wide contest***</p>
+    <p className="bold-paragraph">Awarded 2nd place in nation-wide contest</p>
     </div>
     <div className="text-container">
     <p>CODHAB is a Brazilian public company created with the purpose of developing social housing in the country's capital. Aiming to improve their reputation and credibility, they created a natioal contest for a new logo.</p>

@@ -30,11 +30,8 @@ const workMenu = props => (
             <Link
             className="work-link"
             to="/projects/bux-zero"
-            // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
             >
-
-              <img src={LogoZero} className="logo"/>
-
+              <img src={LogoZero} className="work-logo"/>
             </Link>
           </div>
 
@@ -46,7 +43,7 @@ const workMenu = props => (
 
             >
 
-              <img src={LogoX} className="logo"/>
+              <img src={LogoX} className="work-logo"/>
 
             </Link>
           </div>

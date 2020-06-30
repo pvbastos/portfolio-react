@@ -9,7 +9,7 @@ const about = props => (
 
   <div className="wrapper-project" id="bux-zero">
     <div className="full-image">
-      <video src={C4c} width="100%" controls autoPlay></video>
+      <video src={C4c} width="100%" controls></video>
     </div>
     <div className="subtitle">
       <p>What is Creatives for Climate?</p>

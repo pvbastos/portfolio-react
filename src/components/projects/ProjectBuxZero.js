@@ -61,8 +61,8 @@ const about = props => (
     <p>As part of the design team at BUX I was responsible, together with the other designers, for shaping BUX Zero's visual identity and communications.</p>
     </div>
 
-    <div className="full-image padding-top-80">
-      <video src={ReelBUXZero} width="30%" controls loop></video>
+    <div className="full-image padding-top-80 zero-reel">
+      <video src={ReelBUXZero} width="100%" controls loop></video>
     </div>
     <div className="subtitle">
       <p>BUX Zero ads for Facebook and Instagram</p>

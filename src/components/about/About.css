@@ -81,3 +81,28 @@
   orphans: 1;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .wrapper-about{
+    height: auto;
+    top: 80px;
+  }
+  .container-center{
+    flex-flow: column;
+  }
+  .about-photo{
+    border-radius: 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container-about{
+    margin: 0px;
+    border-radius: 40px;
+    height: calc(100% - 40px);
+  }
+  .about-content {
+  }
+  .about-content p{
+    padding: 20px 20px 20px;
+  }
+}

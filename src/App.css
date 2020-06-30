@@ -63,3 +63,7 @@ body {
 .App-link {
   color: #61dafb;
 }
+
+.menu-mobile{
+	z-index: 100;
+}

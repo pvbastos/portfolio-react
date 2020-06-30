@@ -1,10 +1,8 @@
 import React from 'react';
 import './Projects.css';
-import { ReactComponent as RioZooLogoH } from '../../images/riozoo.svg';
-import { ReactComponent as RioZooLogoSpecsA } from '../../images/riozoo-specs-a.svg';
-import { ReactComponent as RioZooLogoSpecsB } from '../../images/riozoo-specs-b.svg';
 import RioZooManual from '../../images/riozoo-manual.jpg';
 import RioZooSymbol from '../../images/rio-zoo-symbol.png';
+import RioZooLogoH from '../../images/rio-zoo-main.png';
 
 
 
@@ -15,8 +13,8 @@ const about = props => (
   <div className="wrapper-project" id="codhab">
 
 
-    <div className="full-image padding-top-80">
-      <RioZooLogoH />
+    <div className="full-image padding-top-80 more-margin">
+      <img src={RioZooLogoH}></img>
     </div>
     <div className="subtitle">
       <p>RioZoo logo proposition</p>

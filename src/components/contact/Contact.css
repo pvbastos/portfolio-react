@@ -27,7 +27,6 @@
   height: 100%;
   display: flex;
   flex-flow: column;
-
 }
 
 .contact-center{
@@ -114,4 +113,26 @@
 
 .show{
   display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper-contact{
+    height: calc(100vh - 80px);
+    top: 80px;
+  }
+  .container-contact{
+    margin: 0;
+    border-radius: 0px;
+    height: calc(100%);
+  }
+  .contact-email{
+    font-size: 40px;
+  }
+  .contact-email a{
+    border-radius: 0px;
+    padding: 0;
+  }
+  .contact-social{
+    margin-bottom: 40px;
+  }
 }
