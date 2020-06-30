@@ -94,6 +94,8 @@
     border-radius: 0px;
     width: 100%;
     margin: 0 auto;
+    background-size: 100%;
+    background-position: center;
   }
   .container-about{
     margin: 0px;

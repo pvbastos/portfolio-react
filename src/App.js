@@ -15,8 +15,6 @@ import Menu from './components/menu/Menu';
 import { useState } from 'react';
 
 
-
-
 import {
 
   BrowserRouter as Router,
@@ -33,13 +31,20 @@ const App = () => {
 
   const [open, setOpen] = useState(false);
 
+  const openMenu = () => setOpen(true);
+  const closeMenu = () => setOpen(false);
+
+  
 
   return (
+
     <div className="App">
+
       <Router>
 
         <div>
-          <Header open={open} setOpen={setOpen}/>
+          <Header open={open} setOpen={setOpen} openMenu={openMenu} closeMenu={closeMenu}/>
+          <Menu open={open} setOpen={setOpen} openMenu={openMenu} closeMenu={closeMenu}/>
         </div>
 
 

@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import { Transition } from 'react-transition-group';
 import { ReactComponent as Hamburger } from '../../images/hamburger-icon.svg';
+import { useScrollPosition } from "../../hooks/useScrollPosition"
 
 
 import {
@@ -16,31 +17,26 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 
 
-const header = ({ open, setOpen }) => (
+const header = ({ open, setOpen, openMenu, closeMenu }) => (
 
-
+  
 
   <header className="header">
 
     <nav className="header-main-nav">
       <div className="header-logo">
-      <Link
-        className="menu-link"
-        to="/"
-        // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
-        >
+      <Link className="menu-link" to="/">
           <div className="header-logo">
           </div>
         </Link>
       </div>
-      <div className="hamburger-icon" open={open} onClick={() => setOpen(!open)}><Hamburger />
+      <div className="hamburger-icon" open={open} onClick={openMenu}><Hamburger />
 </div>
       <ul>
         <li className="menu-item">
           <Link
             className="menu-link"
             to="/"
-            // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
             >
             work
             </Link>
@@ -49,8 +45,6 @@ const header = ({ open, setOpen }) => (
           <Link
             className="menu-link"
             to="/about"
-            // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
-
           >
           about
           </Link>

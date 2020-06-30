@@ -15,7 +15,7 @@ const about = props => (
     <p className="bold-paragraph">Awarded 2nd place in nation-wide contest</p>
     </div>
     <div className="text-container">
-    <p>CODHAB is a Brazilian public company created with the purpose of developing social housing in the country's capital. Aiming to improve their reputation and credibility, they created a natioal contest for a new logo.</p>
+    <p>CODHAB is a Brazilian public company created with the purpose of developing social housing in the country's capital. Aiming to improve their reputation and credibility, they created a national contest for a new logo.</p>
     </div>
     <div className="full-image padding-top-80">
       <img src={CodhabIMG01} width="100%"></img>
