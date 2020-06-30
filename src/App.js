@@ -12,8 +12,11 @@ import ProjectCodhab from './components/projects/ProjectCodhab';
 import ProjectRioZoo from './components/projects/ProjectRioZoo';
 import ProjectBUXCrypto from './components/projects/ProjectBuxCrypto';
 import Menu from './components/menu/Menu';
-import { useState } from 'react';
+import ScrollToTop from './components/scroll/ScrollToTop'
 
+import { useState } from 'react';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import {
 
@@ -34,14 +37,14 @@ const App = () => {
   const openMenu = () => setOpen(true);
   const closeMenu = () => setOpen(false);
 
-  
+
 
   return (
 
     <div className="App">
 
       <Router>
-
+      <ScrollToTop/>
         <div>
           <Header open={open} setOpen={setOpen} openMenu={openMenu} closeMenu={closeMenu}/>
           <Menu open={open} setOpen={setOpen} openMenu={openMenu} closeMenu={closeMenu}/>
