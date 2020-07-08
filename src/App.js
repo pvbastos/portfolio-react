@@ -55,6 +55,9 @@ const App = () => {
           <Route exact path="/">
             <Work />
           </Route>
+          <Route exact path="/work">
+            <Work />
+          </Route>
           <Route path="/about">
             <About />
 

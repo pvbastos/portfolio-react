@@ -10,11 +10,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  NavLink,
   useParams,
   useRouteMatch
 } from "react-router-dom";
 
-import { HashLink as Link } from 'react-router-hash-link';
 
 const workMenu = props => (
 
@@ -27,17 +27,17 @@ const workMenu = props => (
 
 
           <div className="work-item animation-fade-in-01">
-            <Link
+            <NavLink
             className="work-link"
             to="/projects/bux-zero"
             >
               <img src={LogoZero} className="work-logo"/>
-            </Link>
+            </NavLink>
           </div>
 
 
           <div className="work-item animation-fade-in-02">
-            <Link
+            <NavLink
             className="work-link"
             to="/projects/bux-x"
 
@@ -45,30 +45,30 @@ const workMenu = props => (
 
               <img src={LogoX} className="work-logo"/>
 
-            </Link>
+            </NavLink>
           </div>
 
           <div className="work-item animation-fade-in-03">
-            <Link className="work-link" to="/projects/bux-crypto">
+            <NavLink className="work-link" to="/projects/bux-crypto">
               <img src={LogoCrypto} className="work-logo"/>
-            </Link>
+            </NavLink>
           </div>
         </div>
         <div className="bottom-row">
           <div className="work-item animation-fade-in-04">
-            <Link className="work-link" to="/projects/creatives-for-climate">
+            <NavLink className="work-link" to="/projects/creatives-for-climate">
               <img src={LogoC4C} className="work-logo"/>
-            </Link>
+            </NavLink>
           </div>
           <div className="work-item animation-fade-in-05">
-            <Link className="work-link" to="/projects/riozoo">
+            <NavLink className="work-link" to="/projects/riozoo">
               <img src={LogoRioZoo} className="work-logo"/>
-            </Link>
+            </NavLink>
           </div>
           <div className="work-item animation-fade-in-06">
-            <Link className="work-link" to="/projects/codhab">
+            <NavLink className="work-link" to="/projects/codhab">
               <img src={LogoCodHab} className="work-logo"/>
-            </Link>
+            </NavLink>
           </div>
         </div>
 

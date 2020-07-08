@@ -1,64 +1,95 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Header.css';
+import './MenuHighlight.css';
 import { Transition } from 'react-transition-group';
 import { ReactComponent as Hamburger } from '../../images/hamburger-icon.svg';
 import { useScrollPosition } from "../../hooks/useScrollPosition"
+import useDocumentScrollThrottled from "../../hooks/useDocumentScrollThrottled"
 
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
+  NavLink,
   useParams,
   useRouteMatch
 } from "react-router-dom";
 
-import { HashLink as Link } from 'react-router-hash-link';
+
+function Header({ open, setOpen, openMenu, closeMenu }) {
+
+  const [shouldHideHeader, setShouldHideHeader] = useState(false);
+  const [shouldShowShadow, setShouldShowShadow] = useState(false);
+
+  const MINIMUM_SCROLL = 300;
+  const TIMEOUT_DELAY = 10;
+
+  useDocumentScrollThrottled(callbackData => {
+    const { previousScrollTop, currentScrollTop } = callbackData;
+    const isScrolledDown = previousScrollTop < currentScrollTop;
+    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
+
+    setShouldShowShadow(currentScrollTop > 2);
+
+    setTimeout(() => {
+      setShouldHideHeader(isScrolledDown && isMinimumScrolled);
+    }, TIMEOUT_DELAY);
+  });
+
+  const shadowStyle = shouldShowShadow ? 'shadow' : '';
+  const hiddenStyle = shouldHideHeader ? 'hidden' : '';
+
+  return(
 
 
 
-const header = ({ open, setOpen, openMenu, closeMenu }) => (
-
-  
-
-  <header className="header">
+  <header className={`header ${shadowStyle} ${hiddenStyle}`}>
 
     <nav className="header-main-nav">
       <div className="header-logo">
-      <Link className="menu-link" to="/">
+      <NavLink className="menu-link" to="/">
           <div className="header-logo">
           </div>
-        </Link>
+        </NavLink>
+      </div>
+
+      <div>
+        <ul>
+          <li className="menu-item">
+            <NavLink
+              className="menu-link"
+              activeClassName="underline"
+              to="/work"
+              >
+              work
+              </NavLink>
+          </li>
+          <li className="menu-item">
+            <NavLink
+              className="menu-link"
+              activeClassName="underline"
+              to="/about"
+            >
+            about
+            </NavLink>
+          </li>
+          <li className="last-menu-item">
+            <NavLink
+              className="menu-link"
+              activeClassName="underline"
+              to="/contact"
+              // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
+            >
+            contact
+            </NavLink>
+          </li>
+        </ul>
+        <span className="target">
+        </span>
       </div>
       <div className="hamburger-icon" open={open} onClick={openMenu}><Hamburger />
-</div>
-      <ul>
-        <li className="menu-item">
-          <Link
-            className="menu-link"
-            to="/"
-            >
-            work
-            </Link>
-        </li>
-        <li className="menu-item">
-          <Link
-            className="menu-link"
-            to="/about"
-          >
-          about
-          </Link>
-        </li>
-        <li className="last-menu-item">
-          <Link
-            className="menu-link"
-            to="/contact"
-            // scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
-          >
-          contact
-          </Link>
-        </li>
-      </ul>
+      </div>
     </nav>
     <div className="hamburger-menu">
 
@@ -66,6 +97,6 @@ const header = ({ open, setOpen, openMenu, closeMenu }) => (
 
   </header>
 
-);
+)};
 
-export default header;
+export default Header;
