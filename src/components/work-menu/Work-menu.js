@@ -6,6 +6,8 @@ import LogoCrypto from '../../images/bux-c-logo.svg';
 import LogoC4C from '../../images/c4c-logo.svg';
 import LogoCodHab from '../../images/codhab-logo.svg';
 import LogoRioZoo from '../../images/image-rio-zoo.svg';
+import LogoVictoriaBouzas from '../../images/victoria-bouzas-logo.svg';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -49,8 +51,8 @@ const workMenu = props => (
           </div>
 
           <div className="work-item animation-fade-in-03">
-            <NavLink className="work-link" to="/projects/bux-crypto">
-              <img src={LogoCrypto} className="work-logo"/>
+            <NavLink className="work-link" to="/projects/victoria-bouzas">
+              <img src={LogoVictoriaBouzas} className="work-logo"/>
             </NavLink>
           </div>
         </div>

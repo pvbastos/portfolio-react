@@ -10,7 +10,7 @@ import ProjectBUXx from './components/projects/ProjectBuxX';
 import ProjectC4C from './components/projects/ProjectC4C';
 import ProjectCodhab from './components/projects/ProjectCodhab';
 import ProjectRioZoo from './components/projects/ProjectRioZoo';
-import ProjectBUXCrypto from './components/projects/ProjectBuxCrypto';
+import ProjectVictoriaBouzas from './components/projects/ProjectVictoriaBouzas';
 import Menu from './components/menu/Menu';
 import ScrollToTop from './components/scroll/ScrollToTop'
 
@@ -80,8 +80,8 @@ const App = () => {
           <Route path="/projects/riozoo">
             <ProjectRioZoo />
           </Route>
-          <Route path="/projects/bux-crypto">
-            <ProjectBUXCrypto />
+          <Route path="/projects/victoria-bouzas">
+            <ProjectVictoriaBouzas />
           </Route>
         </Switch>
 

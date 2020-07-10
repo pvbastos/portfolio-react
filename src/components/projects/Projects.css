@@ -84,6 +84,12 @@
   border-radius: 40px;
 }
 
+.full-image-web{
+  width: auto;
+  height: auto;
+  border-radius: 0px;
+}
+
 .full-image video{
   border-radius: 40px;
 }
@@ -93,6 +99,22 @@
   border-radius: 40px;
 }
 
+.full-image-web img{
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+}
+
+.full-image-web-no-shadow{
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
 .full-image-svg{
   width: 100%;
   border-radius: 40px;
@@ -100,6 +122,10 @@
 
 .padding-top-80{
   padding-top: 80px;
+}
+
+.padding-top-20{
+  padding-top: 40px;
 }
 
 .scroll-card{
