@@ -55,6 +55,10 @@
   color: #111111;
 }
 
+.website{
+  text-align: center;
+}
+
 .wrapper-project a{
   color: #111111;
   text-decoration-color: #ffdd00;
@@ -88,6 +92,21 @@
   width: auto;
   height: auto;
   border-radius: 0px;
+}
+
+.full-image-empty{
+  width: auto;
+  height: calc(60vh);
+  background-color: #FFF8F8;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-image-empty img{
+  width: 30%;
 }
 
 .full-image video{
@@ -285,5 +304,13 @@
   .more-margin{
     margin: 20px auto;
     width: calc(100% - 40px) !important;
+  }
+  .full-image-empty{
+    height: 20vh;
+    border-radius: 0px;
+  }
+
+  .full-image-empty img{
+    width: 50%;
   }
 }
